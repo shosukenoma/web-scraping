@@ -8,7 +8,7 @@ import re
 # ========================
 
 url = "http://olympus.realpython.org/profiles/aphrodite"
-url2 = "http://olympus.realpython.org/profiles/poseidon" # Edge Case
+url2 = "http://olympus.realpython.org/profiles/poseidon"    # Edge Case
 url3 = "http://olympus.realpython.org/profiles/dionysus"
 page = urlopen(url3)     # returns an HTTPResponse object.
 # print(page)
