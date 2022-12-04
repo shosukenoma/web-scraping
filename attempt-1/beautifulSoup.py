@@ -1,3 +1,4 @@
+# python -m pip install beautifulsoup4
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
@@ -18,3 +19,11 @@ print(soup.title.string)    # .string helps retrieve just the strings between th
 
 soup.find_all("img", src="/static/dionysus.jpg")    # search for specific kinds of tags whose attributes match certain values
                                                     # helps you extract particular parts of the page.
+
+"""Note: HTML parsers like Beautiful Soup can save you a lot of time and effort 
+when it comes to locating specific data in web pages. 
+However, sometimes HTML is so poorly written and disorganized that 
+even a sophisticated parser like Beautiful Soup can’t interpret the HTML tags properly.
+
+In this case, you’re often left with using .find() and regular expression techniques 
+to try to parse out the information that you need."""
